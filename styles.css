@@ -22,6 +22,10 @@ body { background: #000; text-align: center }
     content: '';
     background: url('./images/pin.png') no-repeat;
 }
+.location_loading::after,
+.location_dragging::after {
+    background-image: url('./images/pin_loading.png');
+}
 .location_loading:before {
     display: block;
     top: 0;

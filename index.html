@@ -1,6 +1,6 @@
 <html>
 <head>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="draggable_background.js"></script>
   <script>
     $(function() {
@@ -20,7 +20,7 @@
       $('#default').backgroundDraggable({
           done: function() {
             $location.addClass('location_loading');
-
+            $location.removeClass('location_dragging');
             timer = setTimeout(() => {
                 $location.removeClass('location_loading');
                 $location.addClass('location_updated');
@@ -34,7 +34,7 @@
           start: function() {
             $location.removeClass('location_loading');
             $location.removeClass('location_updated');
-
+            $location.addClass('location_dragging');
             if (timer) {
                 clearTimeout(timer);
             }
