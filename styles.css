@@ -35,9 +35,9 @@ body { background: #000; text-align: center }
     position: absolute;
     content: '';
     background: url('./images/loading.png') no-repeat;
-    -webkit-animation:spin 1s linear infinite;
-    -moz-animation:spin 1s linear infinite;
-    animation:spin 1s linear infinite;
+    -webkit-animation:spin .5s linear infinite;
+    -moz-animation:spin .5s linear infinite;
+    animation:spin .5s linear infinite;
 }
 .location_updated .location__updated-popup {
     visibility: visible;
