@@ -83,6 +83,9 @@
       if (e.target !== $el[0]) {
         return;
       }
+      if (options.start) {
+        options.start();
+      }
       e.preventDefault();
 
       if (e.originalEvent.touches) {
